@@ -8,8 +8,18 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+	<div id="sizeInfo">
+        <h1>Width: x and Height: y</h1>
+    </div>
+    <script>
+        let h1 = document.querySelector("div > h1");
+        window.onload = function(){
+            h1.innerHTML = "Width: " + window.innerWidth + " and " + "Height: " + window.innerHeight;
+        }
+        window.onresize = function(){
+            h1.innerHTML = "Width: " + window.innerWidth + " and " + "Height: " + window.innerHeight;
+        }
+    </script>
 
 </body>
 
